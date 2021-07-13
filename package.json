@@ -20,7 +20,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "lint": "eslint src/**/*.ts{,x}",
+    "lint-fix": "eslint src/**/*.ts{,x} --fix"
   },
   "peerDependencies": {
     "react": "^17.0.2",
@@ -59,14 +61,6 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "5.11.4",
-    "@testing-library/react": "11.1.0",
-    "@testing-library/user-event": "12.1.10",
-    "@types/debounce": "1.2.0",
-    "@types/jest": "26.0.15",
-    "@types/node": "12.0.0",
-    "@types/react": "17.0.0",
-    "@types/react-dom": "17.0.0",
     "@rollup/plugin-commonjs": "19.0.0",
     "@rollup/plugin-node-resolve": "13.0.0",
     "@rollup/plugin-typescript": "8.2.1",
@@ -76,13 +70,26 @@
     "@storybook/node-logger": "6.3.4",
     "@storybook/preset-create-react-app": "3.2.0",
     "@storybook/react": "6.3.4",
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "11.1.0",
+    "@testing-library/user-event": "12.1.10",
+    "@types/debounce": "1.2.0",
+    "@types/jest": "26.0.15",
+    "@types/node": "12.0.0",
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.30.0",
+    "eslint-plugin-react": "^7.24.0",
     "postcss": "8.3.5",
+    "prettier": "^2.3.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-scripts": "4.0.3",
     "rollup": "2.53.1",
     "rollup-plugin-peer-deps-external": "2.2.4",
     "rollup-plugin-postcss": "4.0.0",
-    "react-scripts": "4.0.3",
     "typescript": "4.1.2",
     "web-vitals": "1.0.1"
   }
