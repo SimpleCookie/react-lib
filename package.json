@@ -2,30 +2,33 @@
   "name": "react-lib",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/debounce": "^1.2.0",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "classnames": "^2.3.1",
-    "debounce": "^1.2.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+  "author": {
+    "email": "Marcus.Ekstrom@devgroup.se",
+    "name": "Marcus",
+    "url": "https://devgroup.se"
+  },
+  "main": "./build/index.js",
+  "module": "./build/index.es.js",
+  "jest": {
+    "moduleNameMapper": {
+      "src": "<rootDir>/src"
+    }
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rollup -c",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "classnames": "2.3.1",
+    "debounce": "1.2.1"
   },
   "eslintConfig": {
     "extends": [
@@ -56,11 +59,31 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.3.4",
-    "@storybook/addon-essentials": "^6.3.4",
-    "@storybook/addon-links": "^6.3.4",
-    "@storybook/node-logger": "^6.3.4",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.4"
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "11.1.0",
+    "@testing-library/user-event": "12.1.10",
+    "@types/debounce": "1.2.0",
+    "@types/jest": "26.0.15",
+    "@types/node": "12.0.0",
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0",
+    "@rollup/plugin-commonjs": "19.0.0",
+    "@rollup/plugin-node-resolve": "13.0.0",
+    "@rollup/plugin-typescript": "8.2.1",
+    "@storybook/addon-actions": "6.3.4",
+    "@storybook/addon-essentials": "6.3.4",
+    "@storybook/addon-links": "6.3.4",
+    "@storybook/node-logger": "6.3.4",
+    "@storybook/preset-create-react-app": "3.2.0",
+    "@storybook/react": "6.3.4",
+    "postcss": "8.3.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "rollup": "2.53.1",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "rollup-plugin-postcss": "4.0.0",
+    "react-scripts": "4.0.3",
+    "typescript": "4.1.2",
+    "web-vitals": "1.0.1"
   }
 }

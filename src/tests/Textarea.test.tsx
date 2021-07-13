@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react"
 import React, { createRef, useEffect } from "react"
-import { Textarea } from "."
+import { Textarea } from "src"
 
 export default { title: "Textarea" }
 
