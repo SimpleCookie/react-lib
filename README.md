@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To get started you must first create a `.env` with `SKIP_PREFLIGHT_CHECK=true`.
+You can do so by running `echo "SKIP_PREFLIGHT_CHECK=true" >> .env`.
+
+Why?
+Because create-react-app will complain about rollup's babel-loader otherwise.
 
 ## Available Scripts
 
