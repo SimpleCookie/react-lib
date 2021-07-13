@@ -17,21 +17,20 @@ export interface Props {
   "aria-required"?: boolean
 }
 
-const TextAreaComponent = (props: Props, _ref: React.LegacyRef<HTMLTextAreaElement> | undefined) => {
+const TextAreaComponent = (
+  props: Props,
+  _ref: React.LegacyRef<HTMLTextAreaElement> | undefined,
+) => {
   const [value, setValue] = useState(props.initialValue || "")
-  const debouncer = useRef(_debounce(props.onChange, props.debounceTime))
-    .current
+  const debouncer = useRef(
+    _debounce(props.onChange, props.debounceTime),
+  ).current
   const onInputChange = (evt: any) => {
     const { onChange, debounceTime } = props
     setValue(evt.target.value)
     debounceTime ? debouncer(evt.target.value) : onChange(evt.target.value)
   }
-  const {
-    className,
-    id,
-    placeholder,
-    maxLength,
-  } = props
+  const { className, id, placeholder, maxLength } = props
 
   return (
     <textarea
