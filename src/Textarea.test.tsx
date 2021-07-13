@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import { render } from "@testing-library/react"
 import React, { createRef, useEffect } from "react"
 import { Textarea } from "."
@@ -35,7 +34,6 @@ describe("Textarea", () => {
         if (inputRef.current) {
           inputRef.current.focus()
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [inputRef.current])
       return (
         <Textarea
