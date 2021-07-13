@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textarea withDynamicError 1`] = `
+<div>
+  <div>
+    <textarea
+      aria-errormessage="error"
+      aria-invalid="true"
+      aria-label="ange fikabröd"
+      class="form-textarea"
+    >
+      fanta
+    </textarea>
+    <p
+      class="validation mandatory"
+      id="error"
+      role="alert"
+    >
+      Inte ett giltigt fikabröd
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Textarea withFocus 1`] = `
+<div>
+  <textarea
+    class="form-textarea"
+    placeholder=""
+  >
+    jahopp
+  </textarea>
+</div>
+`;
+
+exports[`Textarea withOnChange 1`] = `
+<div>
+  <textarea
+    class="form-textarea"
+    placeholder="Är det lunch?"
+  >
+    Snart är det lunch!
+  </textarea>
+</div>
+`;
+
+exports[`Textarea withStaticError 1`] = `
+<div>
+  <div>
+    <textarea
+      aria-describedby="error"
+      aria-errormessage="error"
+      aria-invalid="true"
+      aria-label="ange fikabröd"
+      class="form-textarea"
+    >
+      fanta
+    </textarea>
+    <p
+      class="validation mandatory"
+      id="error"
+    >
+      Inte ett giltigt fikabröd
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Textarea withTextMandatory 1`] = `
+<div>
+  <textarea
+    aria-required="true"
+    class="form-textarea"
+    placeholder="Mata in den obligatoriska texten"
+  />
+</div>
+`;
+
+exports[`Textarea withoutError 1`] = `
+<div>
+  <textarea
+    aria-errormessage="error"
+    class="form-textarea"
+    placeholder="Kanelbulle"
+  />
+</div>
+`;
